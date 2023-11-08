@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+    .quizPage {
+        padding: 10px;;
+    }
+    .floatLeft{
+        float: left;
+    }
+    .floatRight{
+        float: right;
+    }
+    .quest{
+        display: none;
+    }
+    .quest-active{
+        display: block;
+    }
+    .bntQuest{
+        width: 100%;
+    }
+    .questDivLeft{
+        width: 12.5%;
+    }
+    .leftQuest{
+        margin-bottom: 10px;
+    }
+    .btnIndActive{
+        background-color: #0d6efd;
+        color: white;
+    }
+    .btnIndActive:hover{
+        background-color: #014fc5;
+        color: white;
+    }
+    .btnIndFlag{
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: white;
+    }
+    .btnIndFlag:hover{
+        background-color: #b98c06;
+        border-color: #ffc107;
+        color: white;
+    }
+</style>
+<body>
+    <div class="quizPage">
+        <div class="row">
+            <div class="col-8" style="border:1px;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="quest quest-active" id="quest1">
+                            <!-- <center> -->
+                                <!-- <div class="col-5 d-">
+                                <h3 class="card-title">Soal No 1</h3> -->
+                                <!-- COUNTDOWN -->
+                                <div class="container">
+                                    <div class="row table-responsive">
+                                        <div class="col-md-4 offset-sm-7 ">
+                                            <div class="card text-bg-success">
+                                                <div class="card-body">
+                                                    <div id="countdown" class="display-6">10:00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 d-">
+                                    <h3 class="card-title">Soal No 1</h3>
+                                </div>
+                                
+                            <!-- </center> -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest1" id="flexRadioQ1A" value="A">
+                                            <label class="form-check-label" for="flexRadioQ1A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest1" id="flexRadioQ1C" value="C">
+                                            <label class="form-check-label" for="flexRadioQ1C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest1" id="flexRadioQ1B" value="B">
+                                            <label class="form-check-label" for="flexRadioQ1B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest1" id="flexRadioQ1D" value="D">
+                                            <label class="form-check-label" for="flexRadioQ1D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 2 -->
+                        <div class="quest" id="quest2">
+                            <center>
+                                <h3 class="card-title">Soal No 2</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest2" id="flexRadioQ2A">
+                                            <label class="form-check-label" for="flexRadioQ2A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest2" id="flexRadioQ2C">
+                                            <label class="form-check-label" for="flexRadioQ2C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest2" id="flexRadioQ2B">
+                                            <label class="form-check-label" for="flexRadioQ2B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest2" id="flexRadioQ2D">
+                                            <label class="form-check-label" for="flexRadioQ2D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 3 -->
+                        <div class="quest" id="quest3">
+                            <center>
+                                <h3 class="card-title">Soal No 3</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest3" id="flexRadioQ3A">
+                                            <label class="form-check-label" for="flexRadioQ3A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest3" id="flexRadioQ3C">
+                                            <label class="form-check-label" for="flexRadioQ3C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest3" id="flexRadioQ3B">
+                                            <label class="form-check-label" for="flexRadioQ3B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest3" id="flexRadioQ3D">
+                                            <label class="form-check-label" for="flexRadioQ3D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 4 -->
+                        <div class="quest" id="quest4">
+                            <center>
+                                <h3 class="card-title">Soal No 4</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest4" id="flexRadioQ4A">
+                                            <label class="form-check-label" for="flexRadioQ4A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest4" id="flexRadioQ4C">
+                                            <label class="form-check-label" for="flexRadioQ4C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest4" id="flexRadioQ4B">
+                                            <label class="form-check-label" for="flexRadioQ4B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest4" id="flexRadioQ4D">
+                                            <label class="form-check-label" for="flexRadioQ4D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 5 -->
+                        <div class="quest" id="quest5">
+                            <center>
+                                <h3 class="card-title">Soal No 5</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest5" id="flexRadioQ5A">
+                                            <label class="form-check-label" for="flexRadioQ5A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest5" id="flexRadioQ5C">
+                                            <label class="form-check-label" for="flexRadioQ5C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest5" id="flexRadioQ5B">
+                                            <label class="form-check-label" for="flexRadioQ5B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest5" id="flexRadioQ5D">
+                                            <label class="form-check-label" for="flexRadioQ5D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 6 -->
+                        <div class="quest" id="quest6">
+                            <center>
+                                <h3 class="card-title">Soal No 6</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest6" id="flexRadioQ6A">
+                                            <label class="form-check-label" for="flexRadioQ6A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest6" id="flexRadioQ6C">
+                                            <label class="form-check-label" for="flexRadioQ6C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest6" id="flexRadioQ6B">
+                                            <label class="form-check-label" for="flexRadioQ6B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest6" id="flexRadioQ6D">
+                                            <label class="form-check-label" for="flexRadioQ6D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 7 -->
+                        <div class="quest" id="quest7">
+                            <center>
+                                <h3 class="card-title">Soal No 7</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest7" id="flexRadioQ7A">
+                                            <label class="form-check-label" for="flexRadioQ7A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest7" id="flexRadioQ7C">
+                                            <label class="form-check-label" for="flexRadioQ7C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest7" id="flexRadioQ7B">
+                                            <label class="form-check-label" for="flexRadioQ7B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest7" id="flexRadioQ7D">
+                                            <label class="form-check-label" for="flexRadioQ7D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 8 -->
+                        <div class="quest" id="quest8">
+                            <center>
+                                <h3 class="card-title">Soal No 8</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest8" id="flexRadioQ8A">
+                                            <label class="form-check-label" for="flexRadioQ8A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest8" id="flexRadioQ8C">
+                                            <label class="form-check-label" for="flexRadioQ8C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest8" id="flexRadioQ8B">
+                                            <label class="form-check-label" for="flexRadioQ8B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest8" id="flexRadioQ8D">
+                                            <label class="form-check-label" for="flexRadioQ8D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 9 -->
+                        <div class="quest" id="quest6">
+                            <center>
+                                <h3 class="card-title">Soal No 9</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest9" id="flexRadioQ9A">
+                                            <label class="form-check-label" for="flexRadioQ9A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest9" id="flexRadioQ9C">
+                                            <label class="form-check-label" for="flexRadioQ9C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest9" id="flexRadioQ9B">
+                                            <label class="form-check-label" for="flexRadioQ9B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest9" id="flexRadioQ9D">
+                                            <label class="form-check-label" for="flexRadioQ9D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOAL 10 -->
+                        <div class="quest" id="quest10">
+                            <center>
+                                <h3 class="card-title">Soal No 10</h3>
+                            </center>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <hr>
+                            <div class="quizOption">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest10" id="flexRadioQ10A">
+                                            <label class="form-check-label" for="flexRadioQ10A">
+                                                Option A
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest10" id="flexRadioQ10C">
+                                            <label class="form-check-label" for="flexRadioQ10C">
+                                                Option C
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest10" id="flexRadioQ10B">
+                                            <label class="form-check-label" for="flexRadioQ10B">
+                                                Option B
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionQuest10" id="flexRadioQ10D">
+                                            <label class="form-check-label" for="flexRadioQ10D">
+                                                Option D
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-4 ">
+                                <a href="#" class="btn btn-primary floatLeft" id="back_button">
+                                    Soal Sebelumnya
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <center>
+                                    <a href="#" class="btn btn-warning" id="flag_button_1" onclick="flagQuest(window.activeQuest,1)">
+                                        Ragu-ragu
+                                    </a>
+                                    <a href="#" class="btn btn-warning" id="flag_button_0" onclick="flagQuest(window.activeQuest,0)">
+                                        Hapus Ragu-ragu
+                                    </a>
+                                </center>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="btn btn-primary floatRight" id="next_button">
+                                    Soal Selanjutnya
+                                </a>
+                                <a href="#" class="btn btn-success floatRight" id="finish_button">
+                                    Finish
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-4" style="border:1px;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row leftQuest">
+                            <div class="questDivLeft"></div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest" id="btnIndc1" onclick="showPage(0)">1</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest"  id="btnIndc2" onclick="showPage(1)">2</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest"  id="btnIndc3" onclick="showPage(2)">3</a>
+                            </div>
+                        </div>
+                        <div class="row leftQuest">
+                            <div class="questDivLeft"></div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest "  id="btnIndc4" onclick="showPage(3)">4</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest"  id="btnIndc5" onclick="showPage(4)">5</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest"  id="btnIndc6" onclick="showPage(5)">6</a>
+                            </div>
+                        </div>
+                        <div class="row leftQuest">
+                            <div class="questDivLeft"></div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest " id="btnIndc7" onclick="showPage(6)">7</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest" id="btnIndc8" onclick="showPage(7)">8</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest" id="btnIndc9" onclick="showPage(8)">9</a>
+                            </div>
+                        </div>
+                        <div class="row leftQuest">
+                            <div class="questDivLeft"></div>
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest" id="btnIndc10" onclick="showPage(9)">10</a>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="row leftQuest">
+                            <div class="col-3">
+                                <a href="#" class="btn btn-success bntQuest">Sudah</a>
+                            </div>
+                            <div class="col-6">: Sudah Dijawab</div>
+                        </div> 
+                        <div class="row leftQuest">
+                            <div class="col-3">
+                                <a href="#" class="btn btn-warning bntQuest">Ragu</a>
+                            </div>
+                            <div class="col-6">: Ragu - ragu</div>
+                        </div>
+                        <div class="row leftQuest">
+                            <div class="col-3">
+                                <a href="#" class="btn btn-secondary bntQuest">Belum</a>
+                            </div>
+                            <div class="col-6">: Belum Dijawab</div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    window.activeQuest = 0;
+    const prevButton = document.getElementById('back_button');
+    const nextButton = document.getElementById('next_button');
+
+    //mencari jumlah div yang menggunakan class quest
+    const pages = document.querySelectorAll('.quest');
+    const countQuest = 9;
+    let currentPage = 0;
+
+    // Fungsi untuk menampilkan halaman berdasarkan indeks
+    function showPage(pageIndex) {
+        window.activeQuest = pageIndex;
+        //ketika soal nomor 1 maka button Soal Sebelumnya dihidden
+        if(pageIndex==0){
+            $("#back_button").hide();
+        }else{
+            $("#back_button").show();
+        }
+        
+        
+        //ketika soal nomor terakhir maka button Soal Selanjutnya dihidden dan button Finish di tampilkan
+        if(pageIndex==countQuest){
+            $("#next_button").hide();
+            $("#finish_button").show();
+        }else{
+            $("#next_button").show();
+            $("#finish_button").hide();
+        }
+
+        // jika salah satu option di soal aktif di klik, maka button indikator ditambah class btn-success
+        $("input[name='optionQuest"+(parseInt(pageIndex)+1)+"']").change(function() {
+            resetBtnClass((parseInt(pageIndex)+1));
+            $("#btnIndc"+(parseInt(pageIndex)+1)).addClass("btn-success");
+        });
+
+        // jika indikator mempunyai class btnIndFlag maka button hapus ragu2 ditampilkan dan button ragu2 di hide
+        if($("#btnIndc"+(parseInt(pageIndex)+1)).hasClass('btnIndFlag')){
+            $("#flag_button_0").show();
+            $("#flag_button_1").hide();
+        }else{
+            $("#flag_button_0").hide();
+            $("#flag_button_1").show();
+        }
+
+        // looping sejumlah page kali
+        pages.forEach((page, index) => {
+            if (index === pageIndex) {
+                page.classList.add('quest-active');
+                $("#btnIndc"+(parseInt(index)+1)).addClass("btnIndActive");
+            } else {
+                page.classList.remove('quest-active');
+                $("#btnIndc"+(parseInt(index)+1)).removeClass("btnIndActive");
+            }
+        });
+    }
+
+    // Event listener untuk tombol "Previous"
+    prevButton.addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    });
+
+    // Event listener untuk tombol "Next"
+    nextButton.addEventListener('click', () => {
+        if (currentPage < pages.length - 1) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    });
+
+    // Tampilkan halaman pertama saat halaman dimuat
+    showPage(currentPage);
+
+    // fungsi untuk menandai ragu2
+    function flagQuest(index, status){
+        var indexNow = parseInt(index)+1;
+        if(status==1){
+            $("#flag_button_0").show();
+            $("#flag_button_1").hide();
+
+            $("#btnIndc"+index).removeClass("btnIndActive");
+            $("#btnIndc"+(indexNow)).addClass("btnIndFlag");
+        }else{
+            $("#flag_button_0").show();
+            $("#flag_button_1").hide();
+
+            $("#btnIndc"+index).addClass("btnIndActive");
+            $("#btnIndc"+(indexNow)).removeClass("btnIndFlag");
+        }
+    };
+    
+    // fungsi untuk menghapus class btn-secondary dan btn-success di button
+    function resetBtnClass(index){
+        $("#btnIndc"+index).removeClass("btn-secondary");
+        $("#btnIndc"+index).removeClass("btn-success");
+    }
+
+    // Set the target time for the countdown (10 minutes)
+    const targetTime = new Date();
+        targetTime.setMinutes(targetTime.getMinutes() + 1);
+
+        function updateCountdown() {
+            const now = new Date();
+            const timeDifference = new Date(targetTime - now);
+            const minutes = timeDifference.getMinutes();
+            const seconds = timeDifference.getSeconds();
+            const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            document.getElementById('countdown').textContent = formattedTime;
+
+            if (minutes === 0 && seconds === 0) {
+                clearInterval(interval);
+                document.getElementById('countdown').textContent = "FINISH !";
+            }
+        }
+
+        updateCountdown();
+        const interval = setInterval(updateCountdown, 10);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>

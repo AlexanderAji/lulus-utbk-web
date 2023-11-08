@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Content dan Sidebar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+    <style>
+        /* CSS untuk mengatur tampilan main dan aside */
+        .container {
+            display: flex;
+        }
+
+        main {
+            flex: 2; /* Main content mengambil 2 bagian dari 3 bagian total lebar */
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-right: 10px;
+        }
+
+        /* CSS untuk styling label */
+        .option-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* CSS untuk styling radio button */
+        .option-input {
+            margin-right: 10px;
+        }
+
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+            justify-content: space-between;
+            display: flex ;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            
+            
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        aside {
+            flex: 1; /* Sidebar mengambil 1 bagian dari 3 bagian total lebar */
+            background-color: #ddd;
+            padding: 20px;
+            align-content: flex-start;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            float: left;
+            margin: 10px;
+        }
+
+        .green {
+            width: 50px;
+            height: 30px;
+            background-color: rgb(71, 218, 71);
+            color: #fff;
+            /* text-align: center; */
+            /* line-height: 50px; */
+            font-size: 10px;
+            margin: 50px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="question">
+                <div class="page acive" id="page1">
+                    <h1>Soal No. 1</h1>
+                    <p>Ini adalah konten utama dari halaman Anda. Anda dapat menambahkan teks, gambar, video, atau elemen lainnya di sini.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam debitis quod pariatur ratione inventore, in qui tempora nesciunt accusamus facere similique corrupti adipisci corporis dolor possimus dolorum aperiam illum?</p>
+                    <hr>
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 1"> Option 1
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 2"> Option 2
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 3"> Option 3
+                    </label>
+                </div>
+
+                <div class="page" id="page2">
+                    <h1>Soal No. 2</h1>
+                    <p>Ini adalah konten utama dari halaman Anda. Anda dapat menambahkan teks, gambar, video, atau elemen lainnya di sini.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam debitis quod pariatur ratione inventore, in qui tempora nesciunt accusamus facere similique corrupti adipisci corporis dolor possimus dolorum aperiam illum?</p>
+                    <hr>
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 1"> Option 1
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 2"> Option 2
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 3"> Option 3
+                    </label>
+                </div>
+
+                <div class="page" id="page3">
+                    <h1>Soal No. 3</h1>
+                    <p>Ini adalah konten utama dari halaman Anda. Anda dapat menambahkan teks, gambar, video, atau elemen lainnya di sini.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam debitis quod pariatur ratione inventore, in qui tempora nesciunt accusamus facere similique corrupti adipisci corporis dolor possimus dolorum aperiam illum?</p>
+                    <hr>
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 1"> Option 1
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 2"> Option 2
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 3"> Option 3
+                    </label>
+                </div>
+
+                <div class="page" id="page4">
+                    <h1>Soal No. 4</h1>
+                    <p>Ini adalah konten utama dari halaman Anda. Anda dapat menambahkan teks, gambar, video, atau elemen lainnya di sini.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam debitis quod pariatur ratione inventore, in qui tempora nesciunt accusamus facere similique corrupti adipisci corporis dolor possimus dolorum aperiam illum?</p>
+                    <hr>
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 1"> Option 1
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 2"> Option 2
+                    </label>
+                    
+                    <label class="option-label">
+                        <input type="radio" class="option-input" name="option" value="Option 3"> Option 3
+                    </label>
+                </div>
+
+
+
+                <div class="btn-container">
+                    <button class=" btn" type="button" id="back_button" class="btn btn-link" onclick="back()">
+                        <i class="fas fa-arrow-left icon"></i> Soal Sebelumnya </button>
+                    <button class=" btn" type="button" id="flag_button" class="btn btn-link" onclick="flag()">
+                        Ragu-Ragu <i class="fas fa-flag icon"></i></button>
+                    <button class=" btn" type="button" id="next_button" class="btn btn-primary ms-auto" onclick="next()">
+                        Soal Selanjutnya <i class="fas fa-arrow-right icon"></i> 
+                    </button>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <h2>Sidebar</h2> 
+            <!-- <div class="container"> -->
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+                <div class="box">10</div>
+                <div class="green">Sudah dijawab</div>
+            <!-- </div> -->
+            
+            <!-- <div class="yellow">Ragu-Ragu</div>
+            <div class="red">Belum dijawab</div> -->
+        </aside>
+    </div>
+
+    <script>
+        const prevButton = document.getElementById('back_button');
+        const nextButton = document.getElementById('next_button');
+        const pages = document.querySelectorAll('.page');
+        let currentPage = 0;
+
+        // Fungsi untuk menampilkan halaman berdasarkan indeks
+        function showPage(pageIndex) {
+            pages.forEach((page, index) => {
+                if (index === pageIndex) {
+                    page.classList.add('active');
+                } else {
+                    page.classList.remove('active');
+                }
+            });
+        }
+
+        // Event listener untuk tombol "Previous"
+        prevButton.addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        });
+
+        // Event listener untuk tombol "Next"
+        nextButton.addEventListener('click', () => {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        });
+
+        // Tampilkan halaman pertama saat halaman dimuat
+        showPage(currentPage);
+    </script>
+</body>
+</html>

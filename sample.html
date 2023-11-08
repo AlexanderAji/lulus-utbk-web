@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ayo Ngoding - Membuat Form Wizard Bootstrap</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="assets/wizard/wizard.css">
+    </head>
+    <body style="text-align: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                	<form action="" method="post" class="f1">
+                		<div class="f1-steps">
+                			<div class="f1-progress">
+                			    <div class="f1-progress-line" data-now-value="18" data-number-of-steps="3" style="width: 18%;"></div>
+                			</div>
+                            <div class="f1-step active">
+                                <div class="f1-step-icon"><i class="fa fa-edit"></i></div>
+                                <p>Daftar</p>
+                            </div>
+                			<div class="f1-step">
+                				<div class="f1-step-icon"><i class="fa fa-money-bill"></i></div>
+                				<p>Bayar</p>
+                			</div>
+                			<div class="f1-step">
+                				<div class="f1-step-icon"><i class="fa fa-check"></i></div>
+                				<p>Konfirmasi</p>
+                			</div>
+                		</div>
+                		<!-- step 1 -->
+                		<fieldset>
+                		    <h4>Pendaftaran</h4>
+                			<div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name:</label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="schoolOrigin">School Origin:</label>
+                                        <input type="text" class="form-control" id="schoolOrigin" placeholder="Enter School Origin">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phoneNumber">Phone Number:</label>
+                                        <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Gender:</label>
+                                <div class="radio">
+                                    <label><input type="radio" name="gender" value="male">Male</label>
+                                    <label><input type="radio" name="gender" value="female">Female</label>
+                                </div>
+                            </div>
+                            <div class="f1-buttons">
+                                <button type="button" class="btn btn-primary btn-next">Selanjutnya <i class="fa fa-arrow-right"></i></button>
+                            </div>
+                        </fieldset>
+                        <!-- step 2 -->
+                        <fieldset>
+                            <h4>Student Payment Form</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Produk</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Latihan Soal UTBK 30 Hari * 1</td>
+                                        <td>Rp 20.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td>Rp 20.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kode Unik</td>
+                                        <td>Rp 63</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL</td>
+                                        <td>Rp 20.063</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/img/bca.jpg" alt="Bank BNI" class="img-thumbnail">
+                                    <center>
+                                        <table>
+                                            <tr><td>Norek</td><td>: <b>91273923</b></td></tr>
+                                            <tr><td>A/n</td><td>: <b>Aji</b></td></tr>
+                                        </table>
+                                    </center>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="assets/img/bca.jpg" alt="Gambar 2" class="img-thumbnail">
+                                    <center>
+                                        <table>
+                                            <tr><td>Norek</td><td>: <b>91273923</b></td></tr>
+                                            <tr><td>A/n</td><td>: <b>Aji</b></td></tr>
+                                        </table>
+                                    </center>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="assets/img/bca.jpg" alt="Gambar 3" class="img-thumbnail">
+                                    <center>
+                                        <table>
+                                            <tr><td>Norek</td><td>: <b>91273923</b></td></tr>
+                                            <tr><td>A/n</td><td>: <b>Aji</b></td></tr>
+                                        </table>
+                                    </center>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="assets/img/bca.jpg" alt="Gambar 4" class="img-thumbnail">
+                                    <center>
+                                        <table>
+                                            <tr><td>Norek</td><td>: <b>91273923</b></td></tr>
+                                            <tr><td>A/n</td><td>: <b>Aji</b></td></tr>
+                                        </table>
+                                    </center>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="f1-buttons">
+                                <button type="button" class="btn btn-warning btn-previous"><i class="fa fa-arrow-left"></i> Sebelumnya</button>
+                                <button type="button" class="btn btn-primary btn-next">Selanjutnya <i class="fa fa-arrow-right"></i></button>
+                            </div>
+                        </fieldset>
+                        
+                        <!-- step 4 -->
+                        <fieldset>
+                            <h4>SELAMAT BERGABUNG DI LULUS UTBK</h4>
+                            <div class="row">
+                                <div class="alert alert-success" role="alert">Silahkan melakukan konfirmasi pembayaran dengan mengirimkan bukti transfer pada nomor Whatsapp berikut :</div>
+                            </div>
+                            <center>
+                                <h1>08123456789</h1>
+                            </center>
+                            <div class="f1-buttons">
+                                <button type="button" class="btn btn-warning btn-previous"><i class="fa fa-arrow-left"></i> Sebelumnya</button>
+                                <button type="submit" class="btn btn-primary btn-submit"><i class="fa fa-save"></i> Submit</button>
+                            </div>
+                        </fieldset>
+                	</form>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="assets/wizard/wizard.js"></script>
+    </body>
+</html>
